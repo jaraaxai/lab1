@@ -1,3 +1,5 @@
 <h1>
   {{title}}
 </h1>
+<input #counterValue (keyup)="0" />
+<app-counter [counter]="counterValue.value" (counterChange)="counterValue.value = $event"></app-counter>
